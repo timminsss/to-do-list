@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+.input {
+ display: flex;
+ width: 95%;
+ position: relative;
+ align-items: center;
+ font-family: 'Fragment Mono', monospace;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 1px solid rgb(157, 156, 156) ;
+  transition: 0.2s;
+  /* box-shadow: 3px 3px 10px rgb(123, 122, 122); */
+  font-family: 'Fragment Mono', monospace;
+}
+
+.input__box:focus {
+  outline: none;
+  box-shadow: 3px 3px 10px 100vh #fd897e;
+}
+
+.input__submit {
+  position: absolute;
+  margin: 12px;
+  right: 0px;
+  border: none ;
+  background-color: transparent;
+  color: #ffa69e;
+  padding-top: 8px;
+  font-size: 35px;
+  transition: 0.2s all;
+}
+
+.input__submit:hover {
+  color: #fd897e;
+}
+
+.input__submit:active {
+  transform: scale(0.8);
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.todos {
+  display: flex;
+  width: 45%;
+  margin: 20px;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #b8f2e6;
+  border-radius: 8px;
+}
+
+.todos__heading {
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+}
+
+.todos__item {
+  display: flex;
+  background-color: #aed9e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 16px;
+  transition: 0.2s;
+}
+
+.todos__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(157, 156, 156);
+}
+
+.todos__item-text {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.todos__item-text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: white;
+  transform: scale(1.6);
+}
+
+.icons {
+  margin-top: 5px;
+}
+
+.todos__edit-box {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(157, 156, 156) ;
+  flex:1;
+  font-family: 'Fragment Mono', monospace;;
+}
+
+.drag-active, .drag-complete {
+  background-color: #faf3dd;
+}
+
+.drag {
+  box-shadow: 0 0 20px rgb(157, 156, 156) ;
+}
+
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 75%;
+
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+}

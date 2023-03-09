@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+.App {
+  font-family: 'Fragment Mono', monospace;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffa69e;
+}
+
+.header {
+  margin: 30px 0px;
+  font-size: 45px;
+  color: #faf3dd;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .header {
+    margin: 15px 0px;
+    font-size: 35px;
+  }
+}
